@@ -1,0 +1,39 @@
+{
+    "title": "Gabe Sousa",
+    "description": "Creative Technologist",
+    "logo": "/upload/logo.png",
+    "footer": "Ⓒ GABE SOUSA 2020",
+    "favicon": "favicon-32x32.png",
+    "navigation": [
+      {
+        "text": "Portfolio",
+        "link": "/",
+        "position": "left",
+        "external": false
+      },
+      {
+        "text": "Instagram",
+        "link": "https://www.instagram.com/gabe.css",
+        "position": "left",
+        "external": true
+			},
+			{
+        "text": "Twitter",
+        "link": "https://www.twitter.com/gabedotcss",
+        "position": "left",
+        "external": true
+      },
+      {
+        "text": "Say hi!",
+        "link": "mailto:gsousa09@gmail.com",
+        "position": "right",
+        "external": true
+      },
+      {
+        "text": "Journal",
+        "link": "/journal/",
+        "position": "right",
+        "external": false
+      }
+    ]
+  }
