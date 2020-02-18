@@ -12,4 +12,4 @@ categories:
 
 My attempt of a trend I saw on Instagram.
 
-![](/upload/toon-me-challenge.png)
+![Toon Me Challenge](/upload/toon-me-challenge.png)

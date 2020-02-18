@@ -12,4 +12,4 @@ categories:
 
 "It's a chimpanzee right?" "A self portrait." - _Parasite 2019_
 
-![](/upload/cityscape.png)
+![One Groovy Dad](/upload/cityscape.png)

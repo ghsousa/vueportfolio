@@ -11,4 +11,4 @@ categories:
 
 One morning on a walk with my dog, I took a shot of this church in Boston. I threw the photo into PhotoShop played around with it until I got this.
 
-![](/upload/urban_church.jpeg)
+![A cartoonized photo of Boston](/upload/urban_church.jpeg)

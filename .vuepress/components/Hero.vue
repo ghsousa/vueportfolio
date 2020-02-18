@@ -1,6 +1,6 @@
 <template>
 <div class="hero-div">
-	<img class="profile-pic" src="/upload/gabe.jpg">
+	<img class="profile-pic" src="/upload/gabe.jpg" alt="A graphic illustration of Gabe Sousa">
   <h1 v-if="text" class="title" v-html="text" />
 	<p class="hero-paragraph"> These bespectacled eyes see things. These trap-beat loving ears hear things. This Brazilian born, Bay State raised soul feels things - and I turn it all into immersive digital art. </p>
 </div>

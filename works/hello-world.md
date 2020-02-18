@@ -11,4 +11,4 @@ categories:
 
 Not much thought went into this one. I have experience animating HTML5 banners for work so I wanted to see what I could do with Procreate's animation feature. Needless to say, I have a lot of work to do.
 
-![](/upload/hello.gif)
+![A colorful hand waving](/upload/hello.gif)
