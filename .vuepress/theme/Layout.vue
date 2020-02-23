@@ -205,4 +205,9 @@
 		margin-top: 3rem;
 	}
 
+	iframe {
+		margin-top: 2rem;
+		width: 100%;
+	}
+
 </style>

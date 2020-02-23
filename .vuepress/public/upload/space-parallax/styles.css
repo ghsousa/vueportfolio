@@ -1,0 +1,39 @@
+
+img {
+  display: block;
+	max-width: 800px
+}
+
+body {
+	margin: 0;
+}
+	
+.container {
+  margin: 0 auto;
+	width: 100%;
+	max-width: 100%;
+  padding: 0px;
+	position: relative; 
+}
+
+.scene {
+  margin: auto;
+	padding: 0;
+	max-width: 700px;
+	max-height: 700px;
+	overflow: hidden;
+
+}
+
+[data-depth="0.80"] {
+		left: 25% !important;
+		top: 20% !important;
+	}
+
+	[data-depth="1.00"] {
+		left: 80% !important;
+	}
+
+	#main-planet {
+		width: 50%;
+	}
