@@ -64,7 +64,7 @@ export default {
   background-repeat: no-repeat;
   width: 100%;
   height: 50vh;
-  transition: all 2s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 1500ms cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .post:hover .post_background {
@@ -82,7 +82,7 @@ export default {
   padding: 0.5rem 1rem;
   background: rgba(255, 255, 255, 1);
   max-width: 400px;
-	transition: all 3s cubic-bezier(0.25, 0.8, 0.25, 1);
+	transition: all 1500ms cubic-bezier(0.25, 0.8, 0.25, 1);
 	letter-spacing: 2px;
 	text-transform: uppercase;
 }
