@@ -1,6 +1,6 @@
 <template>
 <div class="hero-div">
-	<img class="profile-pic" src="/upload/gabe.jpg" alt="A graphic illustration of Gabe Sousa">
+	<img class="profile-pic" src="/upload/gabe.png" alt="A graphic illustration of a G with some plants">
   <h1 v-if="text" class="title" v-html="text" />
 	<p class="hero-paragraph"> These bespectacled eyes see things. These trap-beat loving ears hear things. This Brazilian born, Bay State raised soul feels things - and I turn it all into immersive digital art. </p>
 </div>
@@ -48,8 +48,7 @@ export default {
 	.profile-pic {
 		display: block;
 		margin: auto;
-		max-width: 120px;
-		border-radius: 100%;
+		max-width: 175px;
 	}
 
   @media screen and (min-width: 600px) {

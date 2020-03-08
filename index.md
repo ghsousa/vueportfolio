@@ -1,6 +1,6 @@
 ---
 works_index: true
-hero_text: "<span>Gabe Sousa</span>"
+hero_text: ""
 title: Graphic Portfolio
 
 ---
