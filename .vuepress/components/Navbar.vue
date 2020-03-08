@@ -133,6 +133,7 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
+		transition: all .3s cubic-bezier(0.25, 0.8, 0.25, 1);
   }
 
   .navigation li {

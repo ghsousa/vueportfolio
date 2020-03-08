@@ -14,7 +14,7 @@ Single-File-Components or SFC is a Vue.js feature that allows us to build our en
 
 Below is an example of a component that displays a paragraph element with static text and a dynamic winner.
 
-```vue
+```html
 <template>
 <p>And the winner is: {{ winner }}</p>
 </template>

@@ -14,17 +14,17 @@
       {
         "text": "Instagram",
         "link": "https://www.instagram.com/gabe.css",
-        "position": "left",
+        "position": "right",
         "external": true
 			},
 			{
         "text": "Twitter",
         "link": "https://www.twitter.com/gabedotcss",
-        "position": "left",
+        "position": "right",
         "external": true
       },
       {
-        "text": "Say hi!",
+        "text": "Contact",
         "link": "mailto:gsousa09@gmail.com",
         "position": "right",
         "external": true
@@ -32,7 +32,7 @@
       {
         "text": "Journal",
         "link": "/journal/",
-        "position": "right",
+        "position": "left",
         "external": false
       }
     ]

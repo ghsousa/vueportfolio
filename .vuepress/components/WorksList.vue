@@ -14,9 +14,6 @@
 
       <div class="info">
         <h2>{{ post.frontmatter.title }}</h2>
-        <span v-if="post.frontmatter.description">{{
-          post.frontmatter.description
-        }}</span>
       </div>
     </router-link>
   </div>
@@ -53,7 +50,6 @@ export default {
   overflow: hidden;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   transition: all .3s cubic-bezier(0.25, 0.8, 0.25, 1);
-
 }
 
 .post:hover {
