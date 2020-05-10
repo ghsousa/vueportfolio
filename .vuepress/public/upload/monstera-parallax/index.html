@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Monstera Parallax</title>
+
+	<!-- Behavioral Meta Data -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	<!-- Styles -->
+	<link rel="stylesheet" type="text/css" href="styles.css" />
+
+</head>
+
+<body>
+
+	<div id="container" class="container">
+		<div id="scene" class="scene">
+			<div id="stems" data-depth="0.05"><img src="images/Stems.png"></div>
+			<div id="pot" data-depth="0.05"><img src="images/Pot.png"></div>
+			<div id="largeleaftwo" data-depth="0.13"><img src="images/LargeLeaf2.png"></div>
+			<div id="smallleaftwo" data-depth="0.10"><img src="images/SmallLeaf2.png"></div>
+			<div id="smallleafthree" data-depth="0.11"><img src="images/SmallLeaf3.png"></div>
+			<div id="smallleafone" data-depth="0.12"><img src="images/SmallLeaf1.png"></div>
+			<div id="largeleafone" data-depth="0.15"><img src="images/LargeLeaf1.png"></div>
+			<div id="mediumleafone" data-depth="0.11"><img src="images/MediumLeaf1.png"></div>
+		</div>
+	</div>
+
+	<!-- Scripts -->
+	<script src="parallax.min.js"></script>
+	<script>
+		var scene = document.getElementById('scene');
+		var parallax = new Parallax(scene);
+	</script>
+
+</body>
+
+</html>

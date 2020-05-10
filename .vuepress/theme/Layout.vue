@@ -113,7 +113,8 @@
     font-family: 'Avenir Next';
     font-size: 16px;
     background: #fff;
-    color: #000;
+    color: #222;
+		font-weight: 500;
   }
 
   img {
@@ -156,27 +157,26 @@
     font-weight: 700;
     margin: 2rem auto 1rem auto;
   }
+	h4 {
+		font-weight: 300;
+	}
 
   p {
     font-size: 1rem;
     line-height: 1.5;
     margin: 1rem auto 2rem auto;
+		font-weight: 400;
   }
 
-  pre {
-    background: var(--color-black);
-    padding: 1rem;
-    margin: 1rem 0;
-		overflow: scroll;
-  }
+	a {
+		transition: all ease-in-out .2s;
+		text-decoration: none;
+		color: #666;
+	}
 
-  code {
-    color: white;
-    background: var(--color-black);
-    font-size: 0.8rem;
-    padding: 0.05rem 0.25rem;
-    font-weight: 400;
-  }
+	a:hover {
+		color: #1c1c1c;
+	}
 
 	.single-journal p {
 		font-size: 1.2rem;
@@ -203,6 +203,17 @@
 		font-weight: 600;
 		margin-bottom: 0;
 		margin-top: 3rem;
+	}
+
+	.single-journal p {
+		font-weight: 400;
+		font-size: 1.3rem;
+		line-height: 2;
+		color: #444;
+	}
+
+	.single-journal {
+		font-family: 'Courier New', Courier, monospace !important; 
 	}
 
 	iframe {

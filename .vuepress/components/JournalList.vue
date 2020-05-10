@@ -20,6 +20,9 @@
 </script>
 
 <style scoped>
+	.journal-list {
+		font-family: 'Courier New', Courier, monospace !important; 
+	}
   .title {
     cursor: pointer;
 		font-weight: 600;

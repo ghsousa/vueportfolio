@@ -1,0 +1,74 @@
+
+img {
+  display: block;
+	max-width: 800px
+}
+
+body {
+	margin: 0;
+}
+	
+.container {
+  margin: 0 auto;
+	width: 100%;
+	max-width: 100%;
+  padding: 0px;
+	position: relative; 
+}
+
+.scene {
+  margin: auto;
+	padding: 0;
+	max-width: 700px;
+	max-height: 700px;
+	overflow: hidden;
+
+}
+
+#layer1 img {
+	max-width: 700px;
+}
+
+#sun img {
+	max-width: 170px;
+	position: absolute;
+	top: 373px;
+	left: 400px;
+}
+
+#rockfront img {
+	max-width: 500px;
+	position: absolute;
+	top: 370px;
+	left: -40px;
+}
+
+#lighthouse img {
+	width: 300px;
+	position: absolute;
+	top: 385px;
+	left: 150px
+}
+
+#rockback img {
+	width: 500px;
+	position: absolute;
+	top: 320px;
+}
+
+#mask img {
+	width: 700px;
+}
+
+#cloud img {
+	width: 170px;
+	position: absolute;
+	top: 320px;
+	left: 130px
+}
+
+#clouds img {
+	position: absolute;
+	left: -75px;
+
+}

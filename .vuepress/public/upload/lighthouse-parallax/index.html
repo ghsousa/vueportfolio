@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Lighthouse Parallax</title>
+
+	<!-- Behavioral Meta Data -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	<!-- Styles -->
+	<link rel="stylesheet" type="text/css" href="styles.css"/>
+
+</head>
+<body>
+
+	<div id="container" class="container">
+		<div id="scene" class="scene">
+			<div id="background" data-depth="0.00"><img src="images/background.png"></div>
+			<div id="layer1" data-depth="0.07"><img src="images/Layer1.png"></div>
+			<div id="cloud" data-depth="0.50"><img src="images/singlecloud.png"></div>
+			<div id="sun" data-depth="0.07"><img src="images/Sun.png"></div>
+			<div id="rockback" data-depth="0.30"><img src="images/RockLayerBack.png"></div>
+			<div id="lighthouse" data-depth="0.40"><img src="images/Lighthouse.png"></div>
+			<div id="rockfront" data-depth="0.45"><img src="images/RockLayerFront.png"></div>
+			<div id="mask" data-depth="0.00"><img src="images/Mask.png"></div>
+			<div id="clouds" data-depth="0.50"><img src="images/Clouds.png"></div>
+	</div>
+
+	<!-- Scripts -->
+	<script src="parallax.min.js"></script>
+	<script>
+
+	var scene = document.getElementById('scene');
+	var parallax = new Parallax(scene);
+
+	</script>
+
+</body>
+</html>

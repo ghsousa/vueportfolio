@@ -13,6 +13,4 @@ categories:
 
 Decided to take one of recent drawings of a funky space scene and turn it into a full parallax experience. Requires desktop browsers to view parallax, sorry mobile users.
 
-![A cartoonized photo of Boston](/upload/space.png)
-
 <iframe width="680" height="680" scrolling="no" src="/upload/space-parallax/index.html"> </iframe>
