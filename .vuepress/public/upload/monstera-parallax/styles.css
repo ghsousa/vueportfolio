@@ -6,6 +6,7 @@ img {
 
 body {
 	margin: 0;
+	background-color: #ffcbb7;
 }
 	
 .container {
@@ -23,12 +24,4 @@ body {
 	max-height: 700px;
 	overflow: hidden;
 
-}
-
-#pot img {
-
-}
-
-#stems img{
-left: 50%;
 }
