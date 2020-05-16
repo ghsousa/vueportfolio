@@ -1,7 +1,7 @@
 ---
 title: Plant Collection
 date: 2020-05-16 00:00:00 +0000
-thumbnail: "/upload/logo.png"
+thumbnail: "/upload/three-plants.png"
 year: 2020
 categories:
 - Graphic
