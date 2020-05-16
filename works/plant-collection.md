@@ -1,6 +1,6 @@
 ---
 title: Plant Collection
-date: 2020-05-10 00:00:00 +0000
+date: 2020-05-16 00:00:00 +0000
 thumbnail: "/upload/logo.png"
 year: 2020
 categories:
@@ -11,7 +11,13 @@ categories:
 ![Purple Plant](/upload/purple-plant.png)
 #### Purple Plant
 
-![Purple Plant & Monstera](/upload/monstera-purpleplant.png)
+![Pink Plant](/upload/pink-plant.png)
+#### Pink Plant
+
+![Monstera](/upload/Monstera.png)
+#### Monstera
+
+![Three colorful plants](/upload/three-plants.png)
 #### Purple Plant & Monstera Plant
 
 ![Logo using plants](/upload/logo.png)
