@@ -20,6 +20,12 @@ categories:
 ![Three colorful plants](/upload/three-plants.png)
 #### Purple Plant & Monstera Plant
 
+![Aloe day time](/upload/IMG_0050.png)
+#### Aloe (day)
+
+![Aloe night time](/upload/IMG_0049.png)
+#### Aloe (night)
+
 ![Logo using plants](/upload/logo.png)
 #### Logo using plants
 

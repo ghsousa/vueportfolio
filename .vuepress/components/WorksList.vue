@@ -12,9 +12,9 @@
         :style="{ backgroundImage: `url(${post.frontmatter.thumbnail})` }"
       ></div>
 
-      <div class="info">
+      <!-- <div class="info">
         <h2>{{ post.frontmatter.title }}</h2>
-      </div>
+      </div> -->
     </router-link>
   </div>
 
@@ -40,24 +40,14 @@ export default {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 1fr 1fr;
-  column-gap: 2rem;
-  row-gap: 2rem;
-  max-width: 100%;
-  margin: auto;
+  margin: auto -5vw;
 }
 
 .post {
   position: relative;
-	border-radius: 10px;
   cursor: pointer;
   overflow: hidden;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   transition: all 1500ms cubic-bezier(0.25, 0.8, 0.25, 1);
-}
-
-.post:hover {
-	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0, 0, 0, 0.295);
-	border-radius: 10px;
 }
 
 .post_background {
