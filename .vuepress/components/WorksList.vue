@@ -42,7 +42,7 @@ export default {
   position: relative;
   cursor: pointer;
   overflow: hidden;
-  transition: all 1500ms cubic-bezier(0.25, 0.8, 0.25, 1);
+	height: 100%;
 }
 
 .post_image {
