@@ -15,8 +15,5 @@ module.exports = {
     anchor: {
       permalink: false
     }
-	},
-	plugins: [
-		'img-lazy'
-	]
+	}
 };

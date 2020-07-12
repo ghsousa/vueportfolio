@@ -37,15 +37,15 @@ p {
 </style>
 ```
 
-### Template & Script
+## Template & Script
 The template portion of this example is a paragraph element with some template syntax that allows us to render data to the DOM. 
 
 Templates in single-file components must be wrapped in one HTML tag, so if we wanted to include multiple paragraph elements in our example, we would have to wrap our elements in a `div` or a similar container element.
 
 In between the script tags are where our logic and data are found. The data and DOM are linked allowing us to dynamically change our data, so if we were to change the winner data to say 'me', the DOM would reflect that change reactively.
 
-### Style
-```vue
+## Style
+```html
 <style scoped>
 p {
 	color: blue;

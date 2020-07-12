@@ -1,44 +1,45 @@
 <template>
   <div class="wrapper">
+  	<div class="container">
+  		<div v-if="$route.path === '/'">
+  			<Content />
+  		</div>
+  		<div v-else-if="$route.path == '/art/'">
+			<Navbar :logo="$site.themeConfig.logo" :sticky="$route.path === '/'" />
+  			<Content />
+  		</div>
 
-    <Navbar :logo="$site.themeConfig.logo" :sticky="$route.path === '/'" />
 
-    <div class="container">
+  		<!-- Single project view -->
+  		<div v-if="isSingleProject" class="single-project">
+  			<Content />
+  			<SingleProjectHeader :title="$page.frontmatter.title" :year="$page.frontmatter.year.toString()"
+  				:categories="$page.frontmatter.categories" />
+  		</div>
 
-      <!-- Works list -->
-      <div
-        v-if="$route.path === '/'"
-        :style="{
-          marginTop: '1rem'
-        }"
-      >
-        <Content/>
-      </div>
+  		<!-- Journal list -->
+  		<div v-if="$route.path === '/journal/'" class="journal-list">
+			<Navbar :logo="$site.themeConfig.logo" :sticky="$route.path === '/'" />
+  			<Content />
+							<button type="button" @click="hasHistory() 
+    ? $router.go(-1) 
+    : $router.push('/')" class="my-5 btn btn-outline-success">&laquo;
+  				Back
+  			</button>
+  		</div>
 
-      <!-- Single project view -->
-      <div v-if="isSingleProject" class="single-project">
-        <Content/>
-				 <SingleProjectHeader
-          :title="$page.frontmatter.title"
-          :year="$page.frontmatter.year.toString()"
-          :categories="$page.frontmatter.categories"
-        />
-      </div>
+  		<!-- Single journal -->
+  		<div v-if="isSingleJournal" class="single-journal">
+  			<h1 class="title">{{ $page.frontmatter.title }}</h1>
+  			<Content />
+  			<button type="button" @click="hasHistory() 
+    ? $router.go(-1) 
+    : $router.push('/')" class="my-5 btn btn-outline-success">&laquo;
+  				Back
+  			</button>
+  		</div>
 
-      <!-- Journal list -->
-      <div v-if="$route.path === '/journal/'" class="journal-list">
-        <Content />
-      </div>
-
-      <!-- Single journal -->
-      <div v-if="isSingleJournal" class="single-journal">
-				 <h1 class="title">{{ $page.frontmatter.title }}</h1>
-        <Content/>
-      </div>
-
-    </div>
-
-    <Footer />
+  	</div>
 
   </div>
 </template>
@@ -59,7 +60,7 @@
         if (path.includes('journal') && path.length >= (journalRoute.length + 1)) {
           return true
         }
-      }
+			}
     },
     updated() {
         // unwrap all images from paragraph tags so we can have
@@ -77,8 +78,11 @@
           wrapper.parentNode.replaceChild(fragment, wrapper)
 
         })
-    },
-  }
+		},
+	methods: {
+		 hasHistory () { return window.history.length > 2 }
+	}
+	}
 </script>
 
 <style>
@@ -110,10 +114,10 @@
   }
 
   body {
-    font-family: 'Avenir Next';
-    font-size: 16px;
+		font-family: Canela;
+    font-size: 1rem;
     background: #fff;
-    color: #222;
+    color: #1C3041;
 		font-weight: 500;
   }
 
@@ -124,11 +128,7 @@
     margin: 2rem 0;
   }
 
-  .container {
-    padding: 0 5vw;
-  }
-
-  .journal-list, .single-journal {
+ .single-journal, .journal-list .content__default  {
     width: 800px;
     max-width: 100%;
     margin: 0 auto;
@@ -153,7 +153,6 @@
   }
 
   h3 {
-    font-size: 1rem;
     font-weight: 700;
     margin: 2rem auto 1rem auto;
   }
@@ -171,21 +170,29 @@
 	a {
 		transition: all ease-in-out .2s;
 		text-decoration: none;
-		color: #666;
+		color: #1C3041;
 	}
 
 	a:hover {
-		color: #1c1c1c;
+		text-decoration: underline;
+	}
+
+	.single-journal {
+		margin-top: 3rem;
+		padding: 1rem 2rem;
 	}
 
 	.single-journal p {
-		font-size: 1.2rem;
+		font-weight: 200;
+		font-size: 1.3rem;
+		line-height: 2;
+		color: #444;
 	}
 
 	.single-journal .title {
 		font-weight: 600;
-		font-size: 2rem;
-		text-align: center;
+		font-size: 7rem;
+		text-align: left;
 	}
 
 	.single-project img {
@@ -205,20 +212,53 @@
 		margin-top: 3rem;
 	}
 
-	.single-journal p {
-		font-weight: 400;
-		font-size: 1.3rem;
-		line-height: 2;
-		color: #444;
-	}
-
-	.single-journal {
-		font-family: 'Courier New', Courier, monospace !important; 
-	}
-
 	iframe {
 		margin-top: 2rem;
 		width: 100%;
 	}
+
+	button {
+		margin-top: 2rem;
+		background: #fff;
+		border: none;
+		font-size: 1.5rem;
+		font-family: Canela;
+		color: #1C3041;
+	}
+
+	pre {
+		background: rgba(7, 34, 187, 0.062);
+		border-radius: 5px;
+		padding: 1rem;
+		line-height: 1.75;
+		overflow: scroll;
+	}
+
+	pre code {
+		font-family: menlo;
+	}
+
+	 .single-journal ul {
+		margin: auto;
+		padding: 1rem;
+		line-height: 2;
+		font-size: 1rem;
+		border-radius: 5px;
+		background: rgba(238, 238, 238, 0.267);
+	}
+
+	 .single-journal ul li {
+		margin: 0 1rem;
+	}
+
+	@media screen and (max-width: 680px) {
+	.single-journal	.title {
+			font-size: 3rem;
+		}
+
+		.single-journal {
+			padding: 0 1rem;
+		}
+}
 
 </style>

@@ -1,22 +1,7 @@
 <template>
   <div class="project-list">
-    <router-link
-      :to="post.path"
-      tag="div"
-      v-for="post in posts"
-      :key="post.title"
-      class="post"
-    >
-
-			<img class="post_image" :src="post.frontmatter.thumbnail" loading="lazy" />
-
-      <!-- <div class="info">
-        <h2>{{ post.frontmatter.title }}</h2>
-      </div> -->
-    </router-link>
+			<img v-for="post in posts" :key="post.title" class="post" :src="post.frontmatter.thumbnail" />
   </div>
-
-	
 </template>
 
 <script>
@@ -24,7 +9,7 @@ export default {
   computed: {
     posts() {
       return this.$site.pages
-        .filter(x => x.path.startsWith("/works/") && !x.frontmatter.works_index)
+        .filter(x => x.path.startsWith("/art/") && !x.frontmatter.works_index)
     }
   }
 };
@@ -32,25 +17,21 @@ export default {
 
 <style scoped>
 .project-list {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 1fr 1fr;
-  margin: auto -5vw;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	column-gap: 4rem;;
+	row-gap: 4rem;
+	height: 100vh;
+	width: 100vw;
+	padding: 4rem;
 }
 
 .post {
-  position: relative;
-  cursor: pointer;
-  overflow: hidden;
-	height: 100%;
-}
+	margin: 1rem;
+	border-radius: 15px;
+	margin: 0rem;
 
-.post_image {
-	height: 100%;
-	width: 100%;
-	margin: 0;
 }
-
 
 @media only screen and (max-width: 800px) {
   .project-list {

@@ -143,7 +143,10 @@
     user-select: none;
     cursor: pointer;
     border-bottom: 1px solid transparent;
-		font-size: 1.1rem;
+		font-size: 1rem;
+		letter-spacing: 2.5px;
+		font-weight: 300;
+		font-family: Canela;
   }
 
   .navigation li:last-of-type {
@@ -235,6 +238,8 @@
   .mobile-nav-close:hover {
     opacity: 0.6;
   }
+
+
 
   @media screen and (min-width: 600px) {
     .desktop-nav {

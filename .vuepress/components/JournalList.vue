@@ -20,14 +20,14 @@
 </script>
 
 <style scoped>
-	.journal-list {
-		font-family: 'Courier New', Courier, monospace !important; 
-	}
   .title {
     cursor: pointer;
 		font-weight: 600;
+		font-family: Canela;
+		color: #1C3041;
   }
   .post {
+		margin: 1rem;
     padding: 2rem 0;
     border-bottom: 1px solid #eee;
   }
@@ -38,10 +38,10 @@
     margin: 0 0 1rem 0;
   }
   .post h2:hover {
-    opacity: 0.6;
+    text-decoration: underline;
   }
   .post p {
     margin: 0;
-    color: #333;
+    color: #555;
   }
 </style>
