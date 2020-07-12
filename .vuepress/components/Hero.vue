@@ -3,7 +3,9 @@
 		<div class="grid">
 			<div class="grid-item" id="bio">
 				<h1 v-if="text" class="title" v-html="text" />
+				<router-link to="/about/">
 				<p id="hero-paragraph">hello.</p>
+				</router-link>
 			</div>
 			<div class="grid-item" id="menu">
 				<router-link to="/art/"><h1 id="art">Art.</h1></router-link>
@@ -104,6 +106,10 @@ export default {
 	background-size: cover;
 	background-position: center;
 	justify-content: flex-end;
+}
+
+h1:hover {
+	text-decoration: underline;
 }
 
 #projects,

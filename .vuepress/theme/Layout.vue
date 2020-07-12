@@ -8,6 +8,18 @@
 			<Navbar :logo="$site.themeConfig.logo" :sticky="$route.path === '/'" />
   			<Content />
   		</div>
+			<div v-else-if="$route.path == '/about/'">
+				<div class="about">
+			  	<Content />
+							<button type="button" @click="hasHistory() 
+    ? $router.go(-1) 
+    : $router.push('/')" class="my-5 btn btn-outline-success">&laquo;
+  				Back
+  			</button>
+				<a href="mailto:gsousa09@gmail.com" id="about-mail">Let's talk.</a>
+				</div>
+			</div>
+
 
 
   		<!-- Single project view -->
@@ -173,10 +185,6 @@
 		color: #1C3041;
 	}
 
-	a:hover {
-		text-decoration: underline;
-	}
-
 	.single-journal {
 		margin-top: 3rem;
 		padding: 1rem 2rem;
@@ -212,6 +220,42 @@
 		margin-top: 3rem;
 	}
 
+	.about {
+		max-width: 500px;
+		margin: auto;
+		border-radius: 10px;
+		padding: 2rem ;
+	}
+
+	.about h1, .about p {
+		margin: 0;
+	}
+
+	.about h1 {
+		padding: 1rem 0;
+	}
+
+	.about p {
+		font-weight: 200;
+		font-size: 1.3rem;
+		line-height: 2;
+		color: #444;
+	}
+
+	#about-mail {
+		margin-top: 2rem;
+		font-size: 1.25rem;
+		font-family: Canela;
+		color: #1C3041;
+		float: right;
+		line-height: 1.3;
+		letter-spacing: 2px;
+	}
+
+	#about-mail:hover {
+		text-decoration: underline;
+	}
+
 	iframe {
 		margin-top: 2rem;
 		width: 100%;
@@ -227,7 +271,7 @@
 	}
 
 	pre {
-		background: rgba(7, 34, 187, 0.062);
+		background: #0722bb10;
 		border-radius: 5px;
 		padding: 1rem;
 		line-height: 1.75;
@@ -249,6 +293,13 @@
 
 	 .single-journal ul li {
 		margin: 0 1rem;
+	}
+
+	#about-pic {
+		max-width: 200px;
+		border-radius: 5px;
+		display: block;
+		margin: auto;
 	}
 
 	@media screen and (max-width: 680px) {
