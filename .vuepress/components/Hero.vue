@@ -8,9 +8,9 @@
 				</router-link>
 			</div>
 			<div class="grid-item" id="menu">
-				<router-link to="/art/"><h1 id="art">Art.</h1></router-link>
-				<router-link to="/journal/"><h1 id="journal">Journal.</h1></router-link>
-				<a href="https://twitter.com/gabedotcss" target="_blank">	<h1  id="twitter">Twitter.</h1></a>
+				<router-link to="/art/"><h1 id="art">Art</h1></router-link>
+				<router-link to="/journal/"><h1 id="journal">Journal</h1></router-link>
+				<a href="https://twitter.com/gabedotcss" target="_blank">	<h1  id="twitter">Twitter</h1></a>
 			</div>
 		</div>
 	</div>
