@@ -83,7 +83,7 @@ export default {
 }
 
 #hero-span {
-	margin: -20px;
+	margin: -15px;
 }
 
 .animate {
