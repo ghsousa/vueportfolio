@@ -39,9 +39,7 @@ export default {
 	}
 }
 </script>
-
-<style scoped>
-.grid {
+<style scoped>.grid {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	height: 100vh;
@@ -83,25 +81,27 @@ export default {
 }
 
 #hero-span {
-	margin: -15px;
+	margin: -20px;
 }
 
 .animate {
-		animation: 1s ease-out 0s 1 slideInFromLeft;
+	animation: 1s ease-out 0s 1 slideInFromLeft;
 	animation-iteration-count: 1;
 }
 
 .animate_art {
-		animation: 1s ease-out .1s 1 slideInFromBottom;
-		animation-fill-mode: forwards;
+	animation: 1s ease-out .1s 1 slideInFromBottom;
+	animation-fill-mode: forwards;
 }
+
 .animate_journal {
-		animation: 1s ease-out .2s 1 slideInFromBottom;
-		animation-fill-mode: forwards;
+	animation: 1s ease-out .2s 1 slideInFromBottom;
+	animation-fill-mode: forwards;
 }
+
 .animate_twitter {
-		animation: 1s ease-out .3s 1 slideInFromBottom;
-		animation-fill-mode: forwards;
+	animation: 1s ease-out .3s 1 slideInFromBottom;
+	animation-fill-mode: forwards;
 }
 
 #bio {
@@ -143,6 +143,11 @@ h1:hover {
 		background-size: cover;
 		background-position: center -90px;
 	}
+
+	#hero-span {
+		margin: -10px;
+	}
+
 
 	#projects,
 	#art,
@@ -200,6 +205,5 @@ h1:hover {
 		opacity: 1;
 	}
 }
-
 
 </style>
