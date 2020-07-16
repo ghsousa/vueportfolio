@@ -213,4 +213,14 @@ h1:hover {
 	}
 }
 
+@media (prefers-color-scheme: dark) {
+	#bio {
+	/* background: linear-gradient(#222, #111) */
+	background: url("/upload/gabe-night.jpg");
+	background-size: cover;
+	background-position: 50%;
+	justify-content: flex-end;
+}
+}
+
 </style>

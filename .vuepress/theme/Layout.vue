@@ -337,4 +337,23 @@
 		}
 }
 
+@media (prefers-color-scheme: dark) { 
+body, button, div#menu {
+	background: #111 !important;
+}
+
+button, code, a#about-mail  {
+	color: #eee;
+}
+
+pre {
+		background: #4a57a146;
+}
+
+h1, h2, p, li {
+	color: #eee !important;
+}
+
+}
+
 </style>
