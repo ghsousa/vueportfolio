@@ -168,6 +168,7 @@ h1:hover {
 @media screen and (max-width: 1000px) {
 	.hero-paragraph {
 		font-size: 13vw;
+		-webkit-text-stroke: 0px #fff;
 	}
 }
 
