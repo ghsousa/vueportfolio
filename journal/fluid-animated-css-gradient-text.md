@@ -1,7 +1,7 @@
 ---
 title: Fluid Animated CSS Gradient Text Effect
 date: 2019-02-12 20:47:18
-prettydate: Feb. 2, 2019
+prettydate: Feb. 12, 2019
 excerpt: A walk through on how to create a simple animated gradient using CSS Animations
 description: Gabe Sousa | A walk through on how to create a simple animated gradient using CSS Animations
 type: post
