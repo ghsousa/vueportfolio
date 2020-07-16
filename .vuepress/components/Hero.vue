@@ -78,7 +78,7 @@ export default {
 	font-family: Canela;
 	font-size: 20vw;
 	left: 0;
-	transition: all ease-in-out 250ms;
+  transition: all 500ms cubic-bezier(0.25, 0.8, 0.25, 1);
 		-webkit-text-stroke: 2px #fff;
 }
 
