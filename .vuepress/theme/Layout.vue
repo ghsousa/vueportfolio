@@ -312,6 +312,21 @@
 		margin: auto;
 	}
 
+	#social-grid {
+		display: grid;
+		grid-template-columns: 50px 50px 50px;
+		grid-column-gap: 0px;
+		margin: auto;
+		justify-content: center;
+	}
+
+	.social-icon {
+		max-width: 25px;
+		display: block;
+		margin: auto;
+		padding-top: 1rem;
+	}
+
 	@media screen and (max-width: 680px) {
 	.single-journal	.title {
 			font-size: 3.5rem;
