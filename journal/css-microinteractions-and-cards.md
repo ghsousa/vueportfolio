@@ -1,6 +1,7 @@
 ---
 title: CSS Micro-Interactions
 date: 2020-03-8 4:22:18
+prettydate: Mar. 8, 2020
 excerpt: How I went about updating my homepage to feature an image gallery with some neat CSS Micro-Interactions
 description: Gabe Sousa | How I updated my homepage to feature a gallery with some snazzy CSS interactions
 type: post

@@ -1,6 +1,7 @@
 ---
 title: Four Firefox Dev-Tools I use daily
 date: 2019-06-10T02:39:48.644Z
+prettydate: Jun. 10, 2019
 excerpt: Breif overview of Firefox's Highlight, Fonts, Changes, and Scratchpad dev-tools.
 description: Gabe Sousa | Breif overview of Firefox's Highlight, Fonts, Changes, and Scratchpad dev-tools.
 type: post

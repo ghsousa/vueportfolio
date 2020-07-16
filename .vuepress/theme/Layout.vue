@@ -1,59 +1,57 @@
 <template>
-  <div class="wrapper">
-  	<div class="container">
-  		<div v-if="$route.path === '/'">
-  			<Content />
-  		</div>
-  		<div v-else-if="$route.path == '/art/'">
-			<Navbar :logo="$site.themeConfig.logo" :sticky="$route.path === '/'" />
-  			<Content />
-  		</div>
+	<div class="wrapper">
+		<div class="container">
+			<div v-if="$route.path === '/'">
+				<Content />
+			</div>
+			<div v-else-if="$route.path == '/art/'">
+				<Navbar :logo="$site.themeConfig.logo" :sticky="$route.path === '/'" />
+				<Content />
+			</div>
 			<div v-else-if="$route.path == '/about/'">
 				<div class="about">
-			  	<Content />
-							<button type="button" @click="hasHistory() 
-    ? $router.go(-1) 
-    : $router.push('/')" class="my-5 btn btn-outline-success">&laquo;
-  				Back
-  			</button>
-				<a href="mailto:gsousa09@gmail.com" id="about-mail">Let's talk.</a>
+					<Content />
+					<button type="button" @click="hasHistory() 
+    				? $router.go(-1) 
+    				: $router.push('/')" class="my-5 btn btn-outline-success">&laquo;
+						Back
+					</button>
+					<a href="mailto:gsousa09@gmail.com" id="about-mail">Let's talk.</a>
 				</div>
 			</div>
 
 
 
-  		<!-- Single project view -->
-  		<div v-if="isSingleProject" class="single-project">
-  			<Content />
-  			<SingleProjectHeader :title="$page.frontmatter.title" :year="$page.frontmatter.year.toString()"
-  				:categories="$page.frontmatter.categories" />
-  		</div>
+			<!-- Single project view -->
+			<div v-if="isSingleProject" class="single-project">
+				<Content />
+				<SingleProjectHeader :title="$page.frontmatter.title" :year="$page.frontmatter.year.toString()"
+					:categories="$page.frontmatter.categories" />
+			</div>
 
-  		<!-- Journal list -->
-  		<div v-if="$route.path === '/journal/'" class="journal-list">
-			<Navbar :logo="$site.themeConfig.logo" :sticky="$route.path === '/'" />
-  			<Content />
-							<button type="button" @click="hasHistory() 
+			<!-- Journal list -->
+			<div v-if="$route.path === '/journal/'" class="journal-list">
+				<Navbar :logo="$site.themeConfig.logo" :sticky="$route.path === '/'" />
+				<Content />
+			</div>
+
+			<!-- Single journal -->
+			<div v-if="isSingleJournal" class="single-journal">
+				<h1 class="title">{{ $page.frontmatter.title }}</h1>
+							<p class="date">{{$page.frontmatter.prettydate}}</p>
+
+				<Content />
+				<button type="button" @click="hasHistory() 
     ? $router.go(-1) 
     : $router.push('/')" class="my-5 btn btn-outline-success">&laquo;
-  				Back
-  			</button>
-  		</div>
+					Back
+				</button>
 
-  		<!-- Single journal -->
-  		<div v-if="isSingleJournal" class="single-journal">
-  			<h1 class="title">{{ $page.frontmatter.title }}</h1>
-  			<Content />
-  			<button type="button" @click="hasHistory() 
-    ? $router.go(-1) 
-    : $router.push('/')" class="my-5 btn btn-outline-success">&laquo;
-  				Back
-  			</button>
-  		</div>
+			</div>
 
-  	</div>
+		</div>
 
-  </div>
+	</div>
 </template>
 
 <script>
@@ -141,7 +139,7 @@
   }
 
  .single-journal, .journal-list .content__default  {
-    width: 800px;
+    width: 900px;
     max-width: 100%;
     margin: 0 auto;
   }
@@ -155,7 +153,7 @@
     font-size: 3rem;
     line-height: 1.15;
     font-weight: 300;
-    margin: 0 auto 3rem auto;
+    margin: auto;
   }
 
   h2 {
@@ -295,6 +293,18 @@
 		margin: 0 1rem;
 	}
 
+	p.date {
+		font-weight: 300;
+		font-size: 1rem;
+		color: #1C3041;
+		margin: 0 auto 2rem auto;
+		letter-spacing: 1.5px;
+	}
+
+	button {
+		margin-bottom: 2rem;
+	}
+
 	#about-pic {
 		max-width: 200px;
 		border-radius: 5px;
@@ -304,7 +314,7 @@
 
 	@media screen and (max-width: 680px) {
 	.single-journal	.title {
-			font-size: 3rem;
+			font-size: 3.5rem;
 		}
 
 		.single-journal {

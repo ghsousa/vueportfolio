@@ -1,6 +1,7 @@
 ---
 title: Single File Components
 date: 2019-10-20 12:59:18
+prettydate: Oct. 20, 2019
 excerpt: Exploring single file components in the Vue framework
 description: Gabe Sousa | Exploring single file components in the Vue framework
 type: post

@@ -1,6 +1,7 @@
 ---
 title: A Quick Introduction to CSS Grid
 date: 2019-02-10 20:47:18
+prettydate: Feb. 10, 2019
 excerpt: Overview on Grid Containers, Grid Items, Columns, Rows, and more.
 description: Gabe Sousa | Overview on Grid Containers, Grid Items, Columns, Rows, and more.
 type: post

@@ -1,23 +1,22 @@
 <template>
   <div class="journal-list">
-    <div v-for="post in journal" :key="post.title" class="post">
-      <router-link tag="h2" :to="post.path" class="title">{{ post.frontmatter.title }}</router-link>
-      <p>{{ post.frontmatter.excerpt }}</p>
-			<p class="reading-time">{{post.readingTime.text}}</p>
-    </div>
+  	<div v-for="post in journal" :key="post.title" class="post">
+  		<router-link tag="h2" :to="post.path" class="title">{{ post.frontmatter.title }}</router-link>
+  		<p>{{ post.frontmatter.excerpt }}</p>
+  		<p class="reading-time">{{post.readingTime.text}}</p>
+  	</div>
   </div>
 </template>
 
 <script>
   export default {
-    computed: {
-      journal() {
-        return this.$site.pages
-          .filter(x => x.path.startsWith('/journal/') && !x.frontmatter.journal_index)
-          .sort((a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date))
-			}
-		}
-		
+  	computed: {
+  		journal() {
+  			return this.$site.pages
+  				.filter(x => x.path.startsWith('/journal/') && !x.frontmatter.journal_index)
+  				.sort((a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date))
+  		}
+  	}
   }
 </script>
 

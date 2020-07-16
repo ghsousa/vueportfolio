@@ -1,6 +1,7 @@
 ---
 title: JS Parallax Effect
 date: 2019-02-09 20:47:18
+prettydate: Feb. 9, 2019
 excerpt: Short post going over how we managed to create an easy JS parallax effect using JQuery
 type: post
 blog: true
