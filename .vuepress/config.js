@@ -15,5 +15,8 @@ module.exports = {
     anchor: {
       permalink: false
     }
-	}
+	},
+	plugins: [
+		'vuepress-plugin-reading-time'
+	]
 };

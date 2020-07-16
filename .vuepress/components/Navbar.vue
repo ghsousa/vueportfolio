@@ -145,8 +145,8 @@
     border-bottom: 1px solid transparent;
 		font-size: 1rem;
 		letter-spacing: 2.5px;
-		font-weight: 300;
-		font-family: Canela;
+		font-weight: 800;
+		font-family: avenir;
   }
 
   .navigation li:last-of-type {

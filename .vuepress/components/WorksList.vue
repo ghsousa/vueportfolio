@@ -28,7 +28,7 @@ export default {
 
 .post {
 	margin: 1rem;
-	border-radius: 15px;
+	border-radius: 10px;
 	margin: 0rem;
 
 }

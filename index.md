@@ -1,7 +1,7 @@
 ---
 works_index: false
 hero_text: ""
-title: Graphic Portfolio
+title: Software Engineer
 
 ---
 <Hero :text="$page.frontmatter.hero_text" />
