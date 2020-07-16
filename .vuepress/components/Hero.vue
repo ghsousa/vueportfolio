@@ -4,7 +4,7 @@
 			<div class="grid-item" id="bio">
 				<h1 v-if="text" class="title" v-html="text" />
 				<router-link to="/about/">
-				<p id="hero-paragraph">hello<span id="hero-span">.</span></p>
+				<a id="hero-paragraph">hello<span id="hero-span">.</span></a>
 				</router-link>
 			</div>
 			<div class="grid-item" id="menu">
@@ -78,6 +78,12 @@ export default {
 	font-family: Canela;
 	font-size: 20vw;
 	left: 0;
+	transition: all ease-in-out 250ms;
+		-webkit-text-stroke: 2px #fff;
+}
+
+#hero-paragraph:hover {
+	color: transparent;
 }
 
 #hero-span {
