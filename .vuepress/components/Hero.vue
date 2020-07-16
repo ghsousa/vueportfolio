@@ -124,6 +124,7 @@ h1:hover {
 	padding: 1rem 2rem;
 	transition: all 750ms cubic-bezier(0.25, 0.8, 0.25, 1);
 	opacity: 0;
+	margin: 2rem auto;
 }
 
 
