@@ -1,11 +1,12 @@
 <template>
 	<div class="wrapper">
 		<div class="container">
+			<Navbar :logo="$site.themeConfig.logo" :sticky="$route.path === '/'" />
+
 			<div v-if="$route.path === '/'">
 				<Content />
 			</div>
 			<div v-else-if="$route.path == '/art/'">
-				<Navbar :logo="$site.themeConfig.logo" :sticky="$route.path === '/'" />
 				<Content />
 			</div>
 			<div v-else-if="$route.path == '/about/'">
@@ -20,8 +21,6 @@
 				</div>
 			</div>
 
-
-
 			<!-- Single project view -->
 			<div v-if="isSingleProject" class="single-project">
 				<Content />
@@ -31,7 +30,6 @@
 
 			<!-- Journal list -->
 			<div v-if="$route.path === '/journal/'" class="journal-list">
-				<Navbar :logo="$site.themeConfig.logo" :sticky="$route.path === '/'" />
 				<Content />
 			</div>
 
@@ -123,6 +121,10 @@
     color: var(--color-black);
   }
 
+	.journal-list, .project-list, .single-journal, .about {
+		margin-top: 15vh !important;
+	}
+
   body {
 		font-family: Canela;
     font-size: 1rem;
@@ -184,7 +186,6 @@
 	}
 
 	.single-journal {
-		margin-top: 3rem;
 		padding: 1rem 2rem;
 	}
 
@@ -338,7 +339,7 @@
 }
 
 @media (prefers-color-scheme: dark) { 
-body, button, div#menu {
+body, button, div#menu, .mobile-nav {
 	background: #111 !important;
 }
 

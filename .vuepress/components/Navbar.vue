@@ -113,7 +113,8 @@
 
   .header {
     display: flex;
-    position: relative;
+    position: absolute;
+		top: 0;
     align-items: center;
     justify-content: space-between;
     height: 6rem;
@@ -121,6 +122,8 @@
     font-size: 0.8rem;
     font-weight: 600;
     z-index: 10;
+		background: transparent;
+		width: 100%;
   }
 
   .logo {
@@ -145,8 +148,10 @@
     border-bottom: 1px solid transparent;
 		font-size: 1rem;
 		letter-spacing: 2.5px;
-		font-weight: 800;
-		font-family: avenir;
+		font-weight: 400;
+		font-family: Chap;
+		text-transform: uppercase;
+		color: #fff;
   }
 
   .navigation li:last-of-type {

@@ -1,18 +1,9 @@
 <template>
 	<div class="hero-div">
-		<div class="grid">
-			<div class="grid-item" id="bio">
 				<h1 v-if="text" class="title" v-html="text" />
 				<router-link to="/about/">
 				<a id="hero-paragraph">hello<span id="hero-span">.</span></a>
 				</router-link>
-			</div>
-			<div class="grid-item" id="menu">
-				<router-link to="/art/"><h1 id="art">Art</h1></router-link>
-				<router-link to="/journal/"><h1 id="journal">Journal</h1></router-link>
-				<a href="https://twitter.com/gabedotcss" target="_blank">	<h1  id="twitter">Twitter</h1></a>
-			</div>
-		</div>
 	</div>
 </template>
 
@@ -39,23 +30,13 @@ export default {
 	}
 }
 </script>
-<style scoped>.grid {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	height: 100vh;
-	background-color: #fff;
-}
+<style scoped>
 
-.grid h1 {
-	font-family: Canela;
-}
-
-
-.grid-item {
-	display: flex;
-	place-items: center;
-	flex-direction: column;
-	justify-content: center;
+.hero-div {
+		background: url("/upload/gabe.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 100vh;
 }
 
 .title {
@@ -71,15 +52,18 @@ export default {
 }
 
 #hero-paragraph {
+	position: absolute;
+	bottom: 0;
+	left:0;
 	margin-bottom: 0;
 	margin-left: 0;
 	font-weight: 300;
 	color: #fff;
 	font-family: Canela;
-	font-size: 20vw;
-	left: 0;
+	font-size: 30vw;
   transition: all 500ms cubic-bezier(0.25, 0.8, 0.25, 1);
 		-webkit-text-stroke: 2px #fff;
+		
 }
 
 #hero-paragraph:hover {
@@ -112,7 +96,7 @@ export default {
 
 #bio {
 	/* background: linear-gradient(#222, #111) */
-	background: url("/upload/gabe.jpg");
+
 	background-size: cover;
 	background-position: center;
 	justify-content: flex-end;
@@ -131,12 +115,17 @@ h1:hover {
 	transition: all 750ms cubic-bezier(0.25, 0.8, 0.25, 1);
 	opacity: 0;
 	margin: 2rem auto;
+	color: #fff;
 }
 
 
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 600px) {
 	.title {
 		margin: 0 auto 1vw auto;
+	}
+
+	.hero-div {
+		background-position: center;
 	}
 }
 
@@ -214,9 +203,10 @@ h1:hover {
 }
 
 @media (prefers-color-scheme: dark) {
-	#bio {
+	.hero-div {
 	/* background: linear-gradient(#222, #111) */
-	background: url("/upload/gabe-night.jpg");
+	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+	url("/upload/gabe-night.jpg");
 	background-size: cover;
 	background-position: 50%;
 	justify-content: flex-end;
