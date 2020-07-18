@@ -1,5 +1,5 @@
 ---
-title: Running CSS Animations once per session 
+title: Running CSS Animations Once Per Session 
 date: 2020-07-19 18:38:00
 prettydate: Jul. 18, 2020
 excerpt: Using JavaScript and sessionStorage to run CSS Animations once per session.
