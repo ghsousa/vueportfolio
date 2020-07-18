@@ -18,6 +18,8 @@ module.exports = {
 	},
 	plugins: [
 		'vuepress-plugin-reading-time',
-		'vuepress-plugin-sitemap'
+		'vuepress-plugin-sitemap', {
+			hostname:"https://gabesousa.com"
+		}
 	]
 };
