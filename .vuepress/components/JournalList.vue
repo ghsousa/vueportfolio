@@ -2,7 +2,7 @@
   <div class="journal-list">
   	<div v-for="post in journal" :key="post.title" class="post">
   		<router-link tag="h2" :to="post.path" class="title">{{ post.frontmatter.title }}</router-link>
-  		<p>{{ post.frontmatter.excerpt }}</p>
+  		<p class="excerpt">{{ post.frontmatter.excerpt }}</p>
   		<p class="reading-time">{{post.readingTime.text}}</p>
   	</div>
   </div>
@@ -32,6 +32,12 @@
 		color: #1C3041;
 		padding-bottom: .25rem;
   }
+	.excerpt {
+		font-family: Chap;
+		font-size: 1.1rem;
+		letter-spacing: .2px;
+		max-width: 90%;
+	}
   .post {
 		margin: 1rem;
     padding: 2rem 0;
