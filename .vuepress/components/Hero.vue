@@ -205,6 +205,10 @@ h1:hover {
 	background-position: 50%;
 	justify-content: flex-end;
 }
+#hero-paragraph {
+	color: #fff;
+		-webkit-text-stroke: 2px #fff;
+}
 }
 
 </style>
