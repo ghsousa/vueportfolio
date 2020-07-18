@@ -18,14 +18,7 @@ export default {
 	mounted () {
 			if (window.sessionStorage.getItem('animated') === null) {
 				document.getElementById("hero-paragraph").classList.add('animate');
-				document.getElementById("art").classList.add('animate_art');
-				document.getElementById("journal").classList.add('animate_journal');
-				document.getElementById("twitter").classList.add('animate_twitter');
 				window.sessionStorage.setItem('animated', 1);
-			} else {
-				document.getElementById("art").style.opacity = 1;
-				document.getElementById("journal").style.opacity = 1;
-					document.getElementById("twitter").style.opacity = 1;
 			}
 	}
 }
@@ -33,7 +26,7 @@ export default {
 <style scoped>
 
 .hero-div {
-		background: url("/upload/gabe.jpg");
+		background:url("/upload/gabe.jpg");
 		background-repeat: no-repeat;
 		background-size: cover;
 		height: 100vh;
@@ -58,12 +51,11 @@ export default {
 	margin-bottom: 0;
 	margin-left: 0;
 	font-weight: 300;
-	color: #fff;
+	color: rgb(0, 0, 0);
 	font-family: Canela;
 	font-size: 30vw;
   transition: all 500ms cubic-bezier(0.25, 0.8, 0.25, 1);
-		-webkit-text-stroke: 2px #fff;
-		
+			-webkit-text-stroke: 2px #000;
 }
 
 #hero-paragraph:hover {
@@ -95,8 +87,6 @@ export default {
 }
 
 #bio {
-	/* background: linear-gradient(#222, #111) */
-
 	background-size: cover;
 	background-position: center;
 	justify-content: flex-end;
@@ -117,19 +107,15 @@ h1:hover {
 	margin: 2rem auto;
 	color: #fff;
 }
-
-
 @media screen and (max-width: 600px) {
-	.title {
+		.title {
 		margin: 0 auto 1vw auto;
 	}
 
 	.hero-div {
 		background-position: center;
 	}
-}
 
-@media screen and (max-width: 680px) {
 	.grid {
 		grid-template-columns: 1fr;
 	}
@@ -138,6 +124,15 @@ h1:hover {
 		order: 2;
 		background-size: cover;
 		background-position: center -90px;
+	}
+
+	#hero-paragraph {
+		color: #fff;
+			-webkit-text-stroke: 0px
+	}
+
+	#hero-paragraph:hover {
+		color: #fff;
 	}
 
 	#hero-span {
@@ -204,7 +199,6 @@ h1:hover {
 
 @media (prefers-color-scheme: dark) {
 	.hero-div {
-	/* background: linear-gradient(#222, #111) */
 	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
 	url("/upload/gabe-night.jpg");
 	background-size: cover;

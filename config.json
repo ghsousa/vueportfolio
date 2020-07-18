@@ -11,12 +11,6 @@
         "position": "left",
         "external": false
       },
-      {
-        "text": "Instagram",
-        "link": "https://www.instagram.com/gabe.css",
-        "position": "right",
-        "external": true
-			},
 			{
         "text": "Twitter",
         "link": "https://www.twitter.com/gabedotcss",

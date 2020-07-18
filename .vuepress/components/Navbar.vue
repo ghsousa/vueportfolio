@@ -148,10 +148,10 @@
     border-bottom: 1px solid transparent;
 		font-size: 1rem;
 		letter-spacing: 2.5px;
-		font-weight: 400;
+		font-weight: 800;
 		font-family: Chap;
 		text-transform: uppercase;
-		color: #fff;
+		color: #000;
   }
 
   .navigation li:last-of-type {
