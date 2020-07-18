@@ -16,10 +16,10 @@ module.exports = {
       permalink: false
     }
 	},
-	plugins: [
-		'vuepress-plugin-reading-time',
-		'vuepress-plugin-sitemap', {
-			hostname:"https://gabesousa.com"
+	plugins: {
+		'vuepress-plugin-reading-time': {},
+		'sitemap': {
+			hostname: "https://gabesousa.com"
 		}
-	]
+	}
 };
