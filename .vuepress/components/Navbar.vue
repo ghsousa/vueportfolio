@@ -243,7 +243,12 @@
     opacity: 0.6;
   }
 
+	@media (prefers-color-scheme: dark) { 
+		.mobile-nav-close {
+			background-image: url("/close-darkmode.svg");
+		}
 
+	}
 
   @media screen and (min-width: 600px) {
     .desktop-nav {
