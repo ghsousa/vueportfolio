@@ -1,6 +1,5 @@
 ---
 works_index: false
-hero_text: ""
 title: Software Engineer
 
 ---
