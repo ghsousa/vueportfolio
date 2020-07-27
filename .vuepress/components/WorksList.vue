@@ -6,14 +6,8 @@
       v-for="post in posts"
       :key="post.title"
       class="post"
-      :style="{ backgroundImage: `url(${post.frontmatter.thumbnail})` }"
     >
-
-      <div class="info">
-        <h2>{{ post.frontmatter.title }}</h2>
-        <span v-if="post.frontmatter.description">{{ post.frontmatter.description }}</span>
-      </div>
-
+		<img class="work-img"  :src="post.frontmatter.thumbnail" />
     </router-link>
   </div>
 </template>
@@ -34,27 +28,31 @@
 
 	.project-list {
 		display: grid;
-		grid-template-columns: 1fr 1fr;
-		column-gap: 3rem;
-		row-gap: 3rem;
-		max-width: 1200px;
+		margin-top: 20vh;
 		margin: auto;
+		padding-bottom: 3rem;
+		grid-gap: 10px;
+		max-width: 1200px;
 	}
-  .post {
-    position: relative;
-    width: 100%;
-    height: 350px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    cursor: pointer;
-	  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-		border-radius: 20px;
-  }
-	.post:hover {
-		 box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	.post:hover .work-img {
+		box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
 	}
+	.post:nth-child(2) {
+		grid-column: 3;
+		grid-row: 1 / 3;
+	}
+	.post:nth-child(2) .work-img {
+		object-fit: cover;
+	}
+	.work-img {
+		width: 100%;
+		height: 100%;
+		margin: 0;
+				transition: all 500ms cubic-bezier(0.25, 0.8, 0.25, 1);
+		box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	}
+
   .info {
     position: absolute;
     left: 0;
@@ -82,5 +80,9 @@
 		.project-list {
 			grid-template-columns: 1fr;
 		}
+		.post:nth-child(2) {
+		grid-column: 1;
+		grid-row: 1 / 1;
+	}
 }
 </style>
