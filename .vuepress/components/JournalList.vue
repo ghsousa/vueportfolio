@@ -65,6 +65,7 @@
 		/* border-bottom: 1px solid #eee; */
 		background: #3adbc0;
 		transition: all 500ms cubic-bezier(0.25, 0.8, 0.25, 1);
+			  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 	}
 
 	.post:nth-child(2n+1) {
@@ -84,10 +85,13 @@
 	.journal-list .post:nth-child(1) {
 		grid-column: 3 / 3;
 		grid-row: 1 / 3;
+		box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
 	}
 
 	.post:hover {
 		transform: translateY(-2%);
+		box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 	}
 
 	.post:nth-child(1) {
