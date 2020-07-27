@@ -43,6 +43,7 @@
 		grid-template-columns: repeat(1, 1fr);
 		grid-gap: 10px;
 		margin-top: 20vh;
+		padding-bottom: 3rem;
 	}
 
 	.title {
@@ -156,18 +157,17 @@
 	}
 
 	@media screen and (max-width: 728px) {
-		.journal-list .post:nth-child(2) {
-			grid-column: 1;
-			grid-row: 4 / 4;
+		.journal-list {
+			display: block;
 		}
 
 		.journal-list .post:nth-child(5) {
 			grid-column: 1fr;
 			grid-row: 1fr;
-			background-size: cover;
-			background-color: #fdbda4;
+			background-image: none;
 		}
-		.post:nth-child(2) .title {
+		
+		.post:nth-child(2) .title, .post:nth-child(5) .title {
 		font-size: 2rem;
 	}
 		.post:nth-child(2) p {
