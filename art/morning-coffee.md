@@ -7,7 +7,6 @@ categories:
 - Graphic
 
 ---
-# Morning Coffee
 
 ![A collage of cartoon fruit](/upload/IMG_0074.png)
 

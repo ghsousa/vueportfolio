@@ -9,6 +9,5 @@ categories:
 - Parallax
 
 ---
-# LightHouse
 
 <iframe width="680" height="680" scrolling="no" src="/upload/lighthouse-parallax/index.html"> </iframe>

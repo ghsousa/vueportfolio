@@ -7,7 +7,6 @@ categories:
 - Graphic
 
 ---
-# City Plant (Night)
 
 ![House plant with city background](/upload/IMG_0048.png)
 

@@ -7,9 +7,6 @@ categories:
 - Graphic
 
 ---
-# Desert Dunes
-
-Some dunes my dude.
 
 ![A cartoonized photo of Boston](/upload/dunes.png)
 

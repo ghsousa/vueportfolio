@@ -7,7 +7,7 @@ categories:
 - Graphic
 
 ---
-# Plant Collection
+
 ![Purple Plant](/upload/purple-plant.png)
 #### Purple Plant
 

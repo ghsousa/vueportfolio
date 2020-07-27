@@ -44,9 +44,9 @@
     display: flex;
     padding: 2rem 0;
     width: 100%;
-    max-width: 680px;
     margin: 0 auto 3rem auto;
 		text-align: center;
+		font-size: 1.5rem;
   }
 
   .column {

@@ -9,6 +9,5 @@ categories:
 - Parallax
 
 ---
-# Monstera
 
 <iframe width="680" height="680" scrolling="no" src="/upload/monstera-parallax/index.html"> </iframe>

@@ -7,7 +7,6 @@ categories:
 - Graphic
 
 ---
-# Getaway
 
 ![A collage of cartoon fruit](/upload/IMG_0075.png)
 

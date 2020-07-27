@@ -7,7 +7,6 @@ categories:
 - Graphic
 
 ---
-# Fruits
 
 ![A collage of cartoon fruit](/upload/IMG_0062.png)
 

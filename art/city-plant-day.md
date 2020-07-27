@@ -7,7 +7,6 @@ categories:
 - Graphic
 
 ---
-# City Plant (Day)
 
 ![House plant with city background](/upload/IMG_0050.png)
 

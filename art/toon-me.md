@@ -8,8 +8,6 @@ categories:
 
 ---
 
-# Toon Me Challenge
-
 My attempt of a trend I saw on Instagram.
 
 ![Toon Me Challenge](/upload/toon-me-challenge.png)
