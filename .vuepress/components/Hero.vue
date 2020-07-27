@@ -107,53 +107,6 @@ h1:hover {
 	margin: 2rem auto;
 	color: #fff;
 }
-@media screen and (max-width: 600px) {
-		.title {
-		margin: 0 auto 1vw auto;
-	}
-
-	.hero-div {
-		background-position: center;
-	}
-
-	.grid {
-		grid-template-columns: 1fr;
-	}
-
-	#bio {
-		order: 2;
-		background-size: cover;
-		background-position: center -90px;
-	}
-
-	#hero-paragraph {
-		color: #fff;
-			-webkit-text-stroke: 0px
-	}
-
-	#hero-paragraph:hover {
-		color: #fff;
-	}
-
-	#hero-span {
-		margin: -10px;
-	}
-
-
-	#projects,
-	#art,
-	#journal,
-	#twitter {
-		font-size: 3rem;
-		margin-bottom: 1rem;
-	}
-}
-
-@media screen and (max-width: 1000px) {
-	.hero-paragraph {
-		font-size: 13vw;
-	}
-}
 
 @keyframes headline {
 	from {

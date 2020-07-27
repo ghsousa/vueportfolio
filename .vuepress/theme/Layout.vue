@@ -23,9 +23,11 @@
 
 			<!-- Single project view -->
 			<div v-if="isSingleProject" class="single-project">
+				<SingleProjectHeader 
+					:title="$page.frontmatter.title"
+          :year="$page.frontmatter.year.toString()"
+          :categories="$page.frontmatter.categories" />
 				<Content />
-				<SingleProjectHeader :title="$page.frontmatter.title" :year="$page.frontmatter.year.toString()"
-					:categories="$page.frontmatter.categories" />
 			</div>
 
 			<!-- Journal list -->
@@ -56,9 +58,9 @@
   export default {
     computed: {
       isSingleProject() {
-        const worksRoute = '/works/'
+        const worksRoute = '/art/'
         const path = this.$route.path
-        if (path.includes('works') && path.length >= (worksRoute.length + 1)) {
+        if (path.includes('art') && path.length >= (worksRoute.length + 1)) {
           return true
         }
       },
@@ -121,7 +123,7 @@
     color: var(--color-black);
   }
 
-	.journal-list, .project-list, .single-journal, .about {
+ .project-list, .single-journal, .about, .single-project {
 		margin-top: 15vh !important;
 	}
 
@@ -140,7 +142,13 @@
     margin: 2rem 0;
   }
 
- .single-journal, .journal-list .content__default  {
+	.journal-list {
+		max-width: 1200px;
+		width: 99%;
+		margin: auto;
+	}
+
+ .single-journal {
     width: 900px;
     max-width: 100%;
     margin: 0 auto;
@@ -328,15 +336,64 @@
 		padding-top: 1rem;
 	}
 
-	@media screen and (max-width: 680px) {
-	.single-journal	.title {
-			font-size: 3.5rem;
-		}
+@media screen and (max-width: 1000px) {
+	.hero-paragraph {
+		font-size: 13vw !important;
+	}
 
-		.single-journal {
-			padding: 0 1rem;
-		}
 }
+@media screen and (max-width: 600px) {
+
+	.single-journal .title {
+		font-size: 3.5rem;
+	}
+
+	.single-journal {
+		padding: 0 1rem;
+	}
+
+	.title {
+		margin: 0 auto 1vw auto;
+	}
+
+	.hero-div {
+		background-position: center;
+	}
+
+	.grid {
+		grid-template-columns: 1fr;
+	}
+
+	#bio {
+		order: 2;
+		background-size: cover;
+		background-position: center -90px;
+	}
+
+	#hero-paragraph {
+		color: #fff;
+		-webkit-text-stroke: 0px
+	}
+
+	#hero-paragraph:hover {
+		color: #fff;
+	}
+
+	#hero-span {
+		margin: -10px;
+	}
+
+
+	#projects,
+	#art,
+	#journal,
+	#twitter {
+		font-size: 3rem;
+		margin-bottom: 1rem;
+	}
+}
+
+
 
 @media (prefers-color-scheme: dark) { 
 body, button, div#menu, .mobile-nav {

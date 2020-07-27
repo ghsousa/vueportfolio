@@ -1,9 +1,13 @@
 <template>
   <div class="journal-list">
   	<div v-for="post in journal" :key="post.title" class="post">
-  		<router-link tag="h2" :to="post.path" class="title">{{ post.frontmatter.title }}</router-link>
+			<router-link tag="h2" :to="post.path">
+			<div class="post-content">
+  		<h2 class="title">{{ post.frontmatter.title }}</h2>
   		<p class="excerpt">{{ post.frontmatter.excerpt }}</p>
   		<p class="reading-time">{{post.readingTime.text}}</p>
+			</div>
+			</router-link>
   	</div>
   </div>
 </template>
@@ -15,51 +19,160 @@
   			return this.$site.pages
   				.filter(x => x.path.startsWith('/journal/') && !x.frontmatter.journal_index)
   				.sort((a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date))
-  		}
-  	}
+			}
+		},
+		methods:{
+			backgroundColor() {
+				let colors = ['#f3dcbe', '#bde9d3', '#c0bde9'];
+				let post = document.getElementsByClassName("post");
+				let i;
+				for (i = 0; i < post.length; i++) {
+					// post[i].style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+				}
+			}
+		},
+		mounted() {
+			this.backgroundColor()
+		}
   }
 </script>
 
 <style scoped>
 	.journal-list {
-		max-width: 700px;
-		margin: auto;
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		grid-gap: 10px;
+		margin-top: 20vh;
 	}
-  .title {
-    cursor: pointer;
+
+	.title {
+		cursor: pointer;
 		font-weight: 600;
 		font-family: Canela;
-		color: #1C3041;
+		color: #000;
 		padding-bottom: .25rem;
-  }
+	}
+
 	.excerpt {
 		font-family: Chap;
 		font-size: 1.1rem;
 		letter-spacing: .2px;
-		max-width: 90%;
 	}
-  .post {
-		margin: 1rem;
-    padding: 2rem 0;
-    border-bottom: 1px solid #eee;
-  }
-  .post:last-of-type {
-    border: 0;
-  }
-  .post h2 {
-    margin: 0;
-  }
-  .post h2:hover {
-    text-decoration: underline;
-  }
-  .post p {
-    margin: 0;
-    color: #555;
-  }
+
+	.post {
+		margin: .5rem;
+		padding: 2rem;
+		/* border-bottom: 1px solid #eee; */
+		background: #3adbc0;
+		transition: all 500ms cubic-bezier(0.25, 0.8, 0.25, 1);
+	}
+
+	.post:nth-child(2n) {
+		background: #ff8e8a;
+	}
+
+	.post:nth-child(3) {
+		background: #ffcc5f;
+	}
+
+	.journal-list .post:nth-child(2) {
+		grid-column: 2;
+		grid-row: 2 / 4;
+	}
+
+	.post:nth-child(2) p {
+		font-size: 2rem;
+	}
+
+	.post:nth-child(2) .title {
+		font-size: 4rem;
+	}
+
+	.post:nth-child(2) .reading-time {
+		font-size: 1rem;
+	}
+
+	.post:nth-child(5) .title {
+		font-size: 3rem;
+	}
+
+	.journal-list .post:nth-child(5) {
+		grid-column: 3 / 3;
+		grid-row: 1 / 3;
+	}
+
+	.post:hover {
+		transform: translateY(-2%);
+	}
+
+	.post:nth-child(5n) {
+		background-image: url('/upload/journalbg.jpg');
+		background-size: cover;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-position: 10vw -30vh;
+		background-color: #fdbda4;
+	}
+
+	.post:last-of-type {
+		border: 0;
+	}
+
+	.post h2 {
+		margin: 0;
+	}
+
+	.post h2:hover {
+		cursor: pointer;
+	}
+
+	.post p {
+		margin: 0;
+		color: #000;
+	}
+
 	.reading-time {
 		font-weight: 800;
 		font-family: avenir;
-		font-size:.9rem;
+		font-size: .9rem;
 		padding-top: .5rem;
 	}
+
+	@media screen and (max-width: 1000px) {
+		.journal-list {
+			margin-top: 20vh;
+		}
+
+		.journal-list .post:nth-child(5) {
+			grid-column: 1 / 1;
+			grid-row: 1 / 4;
+		}
+
+		.post:nth-child(5n) {
+			background-size: cover;
+			background-position: -200px;
+		}
+
+	}
+
+	@media screen and (max-width: 728px) {
+		.journal-list .post:nth-child(2) {
+			grid-column: 1;
+			grid-row: 4 / 4;
+		}
+
+		.journal-list .post:nth-child(5) {
+			grid-column: 1fr;
+			grid-row: 1fr;
+			background-size: cover;
+			background-color: #fdbda4;
+		}
+		.post:nth-child(2) .title {
+		font-size: 2rem;
+	}
+		.post:nth-child(2) p {
+		font-size: 1.25rem;
+	}
+	}
+
 </style>
