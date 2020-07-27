@@ -344,6 +344,14 @@
 }
 @media screen and (max-width: 600px) {
 
+	.hero-div {
+		background-position: center !important;
+	}
+
+	#hero-paragraph {
+		color: #fff !important;
+	}
+
 	.single-journal .title {
 		font-size: 3.5rem;
 	}
