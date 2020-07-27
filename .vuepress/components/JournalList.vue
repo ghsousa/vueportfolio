@@ -40,7 +40,6 @@
 <style scoped>
 	.journal-list {
 		display: grid;
-		grid-template-columns: repeat(1, 1fr);
 		grid-gap: 10px;
 		margin-top: 20vh;
 		padding-bottom: 3rem;
@@ -61,43 +60,28 @@
 	}
 
 	.post {
-		margin: .5rem;
+		margin: .25rem;
 		padding: 2rem;
 		/* border-bottom: 1px solid #eee; */
 		background: #3adbc0;
 		transition: all 500ms cubic-bezier(0.25, 0.8, 0.25, 1);
 	}
 
-	.post:nth-child(2n) {
-		background: #ff8e8a;
+	.post:nth-child(2n+1) {
+		background: #ffa69a;
 	}
 
-	.post:nth-child(3) {
-		background: #ffcc5f;
+		.post:nth-child(3n+1) {
+		background: #99ceff;
 	}
+
 
 	.journal-list .post:nth-child(2) {
 		grid-column: 2;
 		grid-row: 2 / 4;
 	}
 
-	.post:nth-child(2) p {
-		font-size: 2rem;
-	}
-
-	.post:nth-child(2) .title {
-		font-size: 4rem;
-	}
-
-	.post:nth-child(2) .reading-time {
-		font-size: 1rem;
-	}
-
-	.post:nth-child(5) .title {
-		font-size: 3rem;
-	}
-
-	.journal-list .post:nth-child(5) {
+	.journal-list .post:nth-child(1) {
 		grid-column: 3 / 3;
 		grid-row: 1 / 3;
 	}
@@ -106,13 +90,21 @@
 		transform: translateY(-2%);
 	}
 
-	.post:nth-child(5n) {
+	.post:nth-child(1) {
 		background-image: url('/upload/journalbg.jpg');
 		background-size: cover;
 		background-attachment: fixed;
 		background-repeat: no-repeat;
-		background-position: 10vw -30vh;
+		background-position: bottom;
 		background-color: #fdbda4;
+	}
+
+	.post:nth-child(1) .title {
+		font-size: 4rem;
+	}
+	.post:nth-child(1) .excerpt {
+		font-size: 1.75rem;
+		color: #fff;
 	}
 
 	.post:last-of-type {
@@ -161,13 +153,13 @@
 			display: block;
 		}
 
-		.journal-list .post:nth-child(5) {
+		.journal-list .post:nth-child(1) {
 			grid-column: 1fr;
 			grid-row: 1fr;
 			background-image: none;
 		}
-		
-		.post:nth-child(2) .title, .post:nth-child(5) .title {
+
+	 .post:nth-child(1) .title {
 		font-size: 2rem;
 	}
 		.post:nth-child(2) p {
