@@ -63,19 +63,16 @@
 		margin: .25rem;
 		padding: 2rem;
 		/* border-bottom: 1px solid #eee; */
-		background: #3adbc0;
+		background: #91fccf;
+		background-image: url("/upload/bluebg.png");
+		background-size: cover;
 		transition: all 500ms cubic-bezier(0.25, 0.8, 0.25, 1);
-		box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+		box-shadow: 0 1px 3px rgba(83, 83, 83, 0.12), 0 1px 2px rgba(0,0,0,0.24);
 	}
 
-	.post:nth-child(2n+1) {
-		background: #ffa69a;
+	.post:nth-child(2n) {
+		background-color: #7fe1fa;
 	}
-
-		.post:nth-child(3n+1) {
-		background: #99ceff;
-	}
-
 
 	.journal-list .post:nth-child(2) {
 		grid-column: 2;
@@ -160,6 +157,10 @@
 			grid-column: 1fr;
 			grid-row: 1fr;
 			background-image: none;
+			margin-bottom: 2rem;
+		}
+
+		.journal-list .post {
 		}
 
 	 .post:nth-child(1) .title {
