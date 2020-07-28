@@ -167,9 +167,6 @@
 	 .post:nth-child(1) .title {
 		font-size: 2rem;
 	}
-		.post:nth-child(2) p {
-		font-size: 1.25rem;
-	}
 	}
 
 </style>
