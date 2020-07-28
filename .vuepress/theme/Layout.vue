@@ -402,7 +402,7 @@
 }
 
 
-
+/* 
 @media (prefers-color-scheme: dark) { 
 body, button, div#menu, .mobile-nav {
 	background: #111 !important;
@@ -421,6 +421,6 @@ h1, h2, p, li {
 }
 
 
-}
+} */
 
 </style>

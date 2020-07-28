@@ -43,6 +43,8 @@
 		grid-gap: 10px;
 		margin-top: 20vh;
 		padding-bottom: 3rem;
+		background-color: transparent;
+		position: relative;
 	}
 
 	.title {

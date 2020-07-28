@@ -26,10 +26,9 @@ export default {
 <style scoped>
 
 .hero-div {
-		background:url("/upload/gabe.jpg");
-		background-repeat: no-repeat;
-		background-size: cover;
+
 		height: 100vh;
+
 }
 
 .title {
@@ -46,20 +45,21 @@ export default {
 
 #hero-paragraph {
 	position: absolute;
-	bottom: 0;
-	left:0;
+	bottom: 50%;
+	left:50%;
+	transform: translate(-50%, 50%);
 	margin-bottom: 0;
 	margin-left: 0;
 	font-weight: 300;
-	color: rgb(0, 0, 0);
+	color: transparent;
 	font-family: Canela;
 	font-size: 30vw;
   transition: all 500ms cubic-bezier(0.25, 0.8, 0.25, 1);
-			-webkit-text-stroke: 2px #000;
+	-webkit-text-stroke: 2px #000;
 }
 
 #hero-paragraph:hover {
-	color: transparent;
+	color: #000;
 }
 
 #hero-span {
@@ -136,7 +136,7 @@ h1:hover {
 
 @keyframes slideInFromLeft {
 	0% {
-		transform: translateX(-100%);
+
 		opacity: 0;
 	}
 
@@ -145,12 +145,12 @@ h1:hover {
 	}
 
 	100% {
-		transform: translateX(0);
+
 		opacity: 1;
 	}
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
 	.hero-div {
 	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
 	url("/upload/gabe-night.jpg");
@@ -162,6 +162,6 @@ h1:hover {
 	color: #fff;
 		-webkit-text-stroke: 2px #fff;
 }
-}
+} */
 
 </style>
