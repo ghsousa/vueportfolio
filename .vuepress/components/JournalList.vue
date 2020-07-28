@@ -63,15 +63,19 @@
 		margin: .25rem;
 		padding: 2rem;
 		/* border-bottom: 1px solid #eee; */
-		background: #91fccf;
+		background: #ffa8a8;
 		background-image: url("/upload/bluebg.png");
 		background-size: cover;
 		transition: all 500ms cubic-bezier(0.25, 0.8, 0.25, 1);
 		box-shadow: 0 1px 3px rgba(83, 83, 83, 0.12), 0 1px 2px rgba(0,0,0,0.24);
 	}
 
+	.post .excerpt {
+		color: #fff;
+	}
+
 	.post:nth-child(2n) {
-		background-color: #7fe1fa;
+		background-color: #ff9485;
 	}
 
 	.journal-list .post:nth-child(2) {
