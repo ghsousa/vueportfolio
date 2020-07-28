@@ -164,9 +164,6 @@
 			margin-bottom: 2rem;
 		}
 
-		.journal-list .post {
-		}
-
 	 .post:nth-child(1) .title {
 		font-size: 2rem;
 	}
