@@ -51,17 +51,22 @@
 		cursor: pointer;
 		font-weight: 600;
 		font-family: Canela;
+		font-size: 2.25rem;
 		color: #3f4a71;
 		padding-bottom: .25rem;
 	}
 
 	.excerpt {
 		font-family: Chap;
-		font-size: 1.1rem;
+		font-size: 1.25rem;
 		letter-spacing: .2px;
+		width: 100%;
+
 	}
 
 	.post {
+		display: flex;
+		align-items: center;
 		margin: .25rem;
 		padding: 2rem;
 		/* border-bottom: 1px solid #eee; */
@@ -86,6 +91,7 @@
 		grid-column: 3 / 3;
 		grid-row: 1 / 3;
 		box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+		align-items: baseline;
 	}
 
 	.post:hover {
@@ -132,6 +138,7 @@
 		font-family: avenir;
 		font-size: .9rem;
 		padding-top: .5rem;
+		color: #3f4a71 !important;
 	}
 
 	@media screen and (max-width: 1000px) {
