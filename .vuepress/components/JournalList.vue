@@ -51,7 +51,7 @@
 		cursor: pointer;
 		font-weight: 600;
 		font-family: Canela;
-		color: #000;
+		color: #3f4a71;
 		padding-bottom: .25rem;
 	}
 
@@ -65,19 +65,16 @@
 		margin: .25rem;
 		padding: 2rem;
 		/* border-bottom: 1px solid #eee; */
-		background: #ffa8a8;
+		background: #fcbca3;
 		background-image: url("/upload/bluebg.png");
 		background-size: cover;
 		transition: all 500ms cubic-bezier(0.25, 0.8, 0.25, 1);
-		box-shadow: 0 1px 3px rgba(83, 83, 83, 0.12), 0 1px 2px rgba(0,0,0,0.24);
+		box-shadow: 0 1px 3px rgba(83, 83, 83, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+		border-radius: 15px;
 	}
 
 	.post .excerpt {
 		color: #fff;
-	}
-
-	.post:nth-child(2n) {
-		background-color: #ff9485;
 	}
 
 	.journal-list .post:nth-child(2) {
@@ -88,18 +85,17 @@
 	.journal-list .post:nth-child(1) {
 		grid-column: 3 / 3;
 		grid-row: 1 / 3;
-		box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+		box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 	}
 
 	.post:hover {
 		transform: translateY(-2%);
-		box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+		box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 	}
 
 	.post:nth-child(1) {
 		background-image: url('/upload/journalbg.jpg');
 		background-size: cover;
-		background-attachment: fixed;
 		background-repeat: no-repeat;
 		background-position: bottom;
 		background-color: #fdbda4;
@@ -108,6 +104,7 @@
 	.post:nth-child(1) .title {
 		font-size: 4rem;
 	}
+
 	.post:nth-child(1) .excerpt {
 		font-size: 1.75rem;
 		color: #fff;
@@ -162,13 +159,22 @@
 		.journal-list .post:nth-child(1) {
 			grid-column: 1fr;
 			grid-row: 1fr;
-			background-image: none;
 			margin-bottom: 2rem;
+			background-image: url('/upload/journalbg-mobile.jpg');
+			background-size: 100%;
+			background-repeat: no-repeat;
+			background-color: #fdbda4;
 		}
 
-	 .post:nth-child(1) .title {
-		font-size: 2rem;
-	}
+		.post:nth-child(1) .title {
+			font-size: 2rem;
+			width: 75%;
+		}
+
+		.post:nth-child(1) .excerpt {
+			width: 80%;
+		}
+
 	}
 
 </style>
