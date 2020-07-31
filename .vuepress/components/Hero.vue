@@ -25,12 +25,6 @@ export default {
 </script>
 <style scoped>
 
-.hero-div {
-
-		height: 100vh;
-
-}
-
 .title {
 	text-align: center;
 	font-weight: 300;
@@ -45,21 +39,20 @@ export default {
 
 #hero-paragraph {
 	position: absolute;
-	bottom: 50%;
-	left:50%;
-	transform: translate(-50%, 50%);
+	width: 100%;
+	top: 60%;
 	margin-bottom: 0;
 	margin-left: 0;
+	padding: 0 0 0 5%;
 	font-weight: 300;
-	color: transparent;
+	color: #3f4a71;
 	font-family: Canela;
-	font-size: 30vw;
+	font-size: 15rem;
   transition: all 500ms cubic-bezier(0.25, 0.8, 0.25, 1);
-	-webkit-text-stroke: 2px #000;
 }
 
 #hero-paragraph:hover {
-	color: #000;
+	transform: translateY(-10px)
 }
 
 #hero-span {

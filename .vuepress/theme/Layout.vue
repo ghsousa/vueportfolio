@@ -23,10 +23,8 @@
 
 			<!-- Single project view -->
 			<div v-if="isSingleProject" class="single-project">
-				<SingleProjectHeader 
-					:title="$page.frontmatter.title"
-          :year="$page.frontmatter.year.toString()"
-          :categories="$page.frontmatter.categories" />
+				<SingleProjectHeader :title="$page.frontmatter.title" :year="$page.frontmatter.year.toString()"
+					:categories="$page.frontmatter.categories" />
 				<Content />
 			</div>
 
@@ -36,19 +34,22 @@
 			</div>
 
 			<!-- Single journal -->
-			<div v-if="isSingleJournal" class="single-journal">
-				<h1 class="title">{{ $page.frontmatter.title }}</h1>
-							<p class="date">{{$page.frontmatter.prettydate}}</p>
+			<div v-if="isSingleJournal">
+				<div class="single-journal">
 
-				<Content />
-				<button type="button" @click="hasHistory() 
+					<h1 class="title">{{ $page.frontmatter.title }}</h1>
+					<p class="date">{{$page.frontmatter.prettydate}}</p>
+
+					<Content />
+					<button type="button" @click="hasHistory() 
     ? $router.go(-1) 
     : $router.push('/')" class="my-5 btn btn-outline-success">&laquo;
-					Back
-				</button>
+						Back
+					</button>
+
+				</div>
 
 			</div>
-
 		</div>
 
 	</div>
@@ -208,6 +209,7 @@
 		font-weight: 600;
 		font-size: 7rem;
 		text-align: left;
+		color: #3f4a71;
 	}
 
 	.single-project img {
@@ -349,7 +351,9 @@
 	}
 
 	#hero-paragraph {
-		color: #fff !important;
+		color: #000 !important;
+		font-size: 7rem !important;
+		top:63% !important;
 	}
 
 	.single-journal .title {

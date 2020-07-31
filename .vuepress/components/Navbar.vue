@@ -150,7 +150,7 @@
 		font-weight: 800;
 		font-family: Chap;
 		text-transform: uppercase;
-		color: #000;
+		color: #3f4a71;
   }
 
   .navigation li:last-of-type {
@@ -158,16 +158,16 @@
   }
 
   .navigation li:hover {
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #3f4a71;
   }
 
   .active {
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #3f4a71;
   }
 
   a {
     text-decoration: none;
-    color: inherit;
+    color: #3f4a71;
   }
 
   a:active { color: inherit; }
