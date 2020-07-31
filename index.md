@@ -4,4 +4,3 @@ title: Software Engineer
 
 ---
 <SlideShow />
-<Hero :text="$page.frontmatter.hero_text" />

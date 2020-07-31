@@ -58,32 +58,8 @@ function showSlides() {
 .slideshow-container {
 	max-width: 800px;
 	width: 95%;
-  margin: auto;
-	position: absolute;
-	bottom: 50%;
-	left:50%;
-	transform: translate(-50%, 50%);
+    margin: auto;
+    margin-top: 15vh;
 }
 
-
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1s;
-  animation-name: fade;
-  animation-duration: 1s;
-}
-
-@-webkit-keyframes fade {
-   0% {transform: scale(.8); opacity: 0;}
-	75% {opacity: 1;}
-  100% {transform: scale(1);}
-}
-
-@keyframes fade {
-  0% {transform: scale(.8); opacity: 0;}
-	75% {opacity: 1;}
-  100% {transform: scale(1);}
-}
 </style>
