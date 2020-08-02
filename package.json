@@ -2,7 +2,7 @@
   "name": "portfolio-vuepress",
   "scripts": {
     "site:build": "vuepress build portfolio",
-		"site:develop": "vuepress dev portfolio",
+		"site:develop": "vuepress dev",
 		"postbuild": "vuepress-sitemap -H https://gabesousa.com -d dist"
   },
   "author": "Nichlas W. Andersen",

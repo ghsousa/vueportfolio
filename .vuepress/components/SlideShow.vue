@@ -57,33 +57,18 @@ function showSlides() {
 /* Slideshow container */
 .slideshow-container {
 	max-width: 800px;
+<<<<<<< HEAD
 	width: 50%;
   margin: auto;
 	position: absolute;
 	bottom: 50%;
 	left:50%;
 	transform: translate(-50%, 50%);
+=======
+	width: 95%;
+    margin: auto;
+    margin-top: 15vh;
+>>>>>>> 72c1a3f30dd8c9508fbb7bf969511c0694c8e4f7
 }
 
-
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1s;
-  animation-name: fade;
-  animation-duration: 1s;
-}
-
-@-webkit-keyframes fade {
-   0% {transform: scale(.8); opacity: 0;}
-	75% {opacity: 1;}
-  100% {transform: scale(1);}
-}
-
-@keyframes fade {
-  0% {transform: scale(.8); opacity: 0;}
-	75% {opacity: 1;}
-  100% {transform: scale(1);}
-}
 </style>
