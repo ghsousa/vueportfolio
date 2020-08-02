@@ -57,7 +57,7 @@ function showSlides() {
 /* Slideshow container */
 .slideshow-container {
 	max-width: 800px;
-	width: 95%;
+	width: 50%;
   margin: auto;
 	position: absolute;
 	bottom: 50%;
