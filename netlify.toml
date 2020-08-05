@@ -1,6 +1,4 @@
 
 [build]
 
-base = "vueportfolio/"
-
   command = "CI= npm run build"
