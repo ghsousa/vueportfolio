@@ -36,7 +36,6 @@
 	}
 	.post:hover .work-img {
 		transform: translateY(-2%);
-		filter: saturate(100%);
 		box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 	}
 	.post:nth-child(2) {
@@ -52,7 +51,6 @@
 		margin: 0;
 		transition: all 500ms cubic-bezier(0.25, 0.8, 0.25, 1);
 		box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-		filter: saturate(0%);
 		border-radius: 15px;
 	}
 

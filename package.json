@@ -2,13 +2,14 @@
   "name": "portfolio-vuepress",
   "scripts": {
     "site:build": "vuepress build portfolio",
-		"site:develop": "vuepress dev",
-		"postbuild": "vuepress-sitemap -H https://gabesousa.com -d dist"
+    "site:develop": "vuepress dev",
+    "postbuild": "vuepress-sitemap -H https://gabesousa.com -d dist"
   },
   "author": "Nichlas W. Andersen",
   "license": "MIT",
   "dependencies": {
     "prismjs": "^1.19.0",
+    "vue-carousel": "^0.18.0",
     "vuepress": "^1.2.0",
     "vuepress-plugin-img-lazy": "^1.0.3",
     "vuepress-plugin-sitemap": "^2.3.1",
