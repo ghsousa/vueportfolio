@@ -4,4 +4,3 @@ title: Graphic Portfolio
 
 ---
 
-<Carousel />
