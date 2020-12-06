@@ -1,11 +1,10 @@
 <template>
 <div class="carousel-div">
-  <carousel :per-page="1" :navigate-to="someLocalProperty" :mouse-drag="true">
+  <carousel :per-page="1" :mouse-drag="true">
     <slide
       tag="div"
       v-for="post in posts"
       :key="post.title"
-			@slideclick="handleSlideClick"
       class="post"
 			>
     	<img class="work-img"  :src="post.frontmatter.thumbnail" />
@@ -20,11 +19,6 @@
 		components:{
 			Carousel,
 			Slide
-		},
-		methods: {
-			handleSlideClick: function(dataset) {
-    console.log(dataset.index, dataset.name)
-  }
 		},
   		computed: {
   			posts() {

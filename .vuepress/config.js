@@ -20,6 +20,7 @@ module.exports = {
 		'vuepress-plugin-reading-time': {},
 		'sitemap': {
 			hostname: "https://gabesousa.com"
-		}
+		},
+		"vue-carousel": {}
 	}
 };
