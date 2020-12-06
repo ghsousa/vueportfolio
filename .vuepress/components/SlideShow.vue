@@ -3,15 +3,11 @@
 <div class="slideshow-container">
   <!-- Full-width images with number and caption text -->
 	 <div class="mySlides fade">
-    <img src="/upload/boat.jpeg" style="width:100%">
-  </div>
-
-  <div class="mySlides fade">
-    <img src="/upload/IMG_0093.png" style="width:100%">
+    <img src="/upload/gabe-1.jpeg" >
   </div>
 
 	 <div class="mySlides fade">
-    <img src="/upload/three-plants.png" style="width:100%">
+    <img src="/upload/gabe-night.jpeg" >
   </div>
 
 </div>
@@ -56,7 +52,8 @@ function showSlides() {
 
 /* Slideshow container */
 .slideshow-container {
-
+position: absolute;
+top: -5%;
 }
 
 </style>

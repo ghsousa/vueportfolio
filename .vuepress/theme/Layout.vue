@@ -3,7 +3,7 @@
 		<div class="container">
 			<Navbar :logo="$site.themeConfig.logo" :sticky="$route.path === '/'" />
 
-			<div v-if="$route.path === '/'">
+			<div class="home-page" v-if="$route.path === '/'">
 				<Content />
 			</div>
 			<div v-else-if="$route.path == '/art/'">
@@ -324,6 +324,9 @@
 	}
 
 	#social-grid {
+		position: absolute;
+		bottom: 5%;
+		left: 5%;
 		display: grid;
 		grid-template-columns: 50px 50px 50px;
 		grid-column-gap: 0px;
@@ -336,6 +339,11 @@
 		display: block;
 		margin: auto;
 		padding-top: 1rem;
+		transition: all 500ms cubic-bezier(0.25, 0.8, 0.25, 1);
+	}
+
+	.social-icon:hover {
+		transform: scale(1.2);
 	}
 
 @media screen and (max-width: 1000px) {
@@ -405,6 +413,16 @@
 	}
 }
 
+.home-page {
+	background: url("/upload/gabe-1.jpeg");
+	background-size: cover;
+	height: 100vh;
+}
+@media only screen and (max-width: 600px) { 
+	.home-page {
+		background-position: center;
+	}
+}
 
 /* 
 @media (prefers-color-scheme: dark) { 
