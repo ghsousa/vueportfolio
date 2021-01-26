@@ -11,12 +11,6 @@
         "position": "left",
         "external": false
       },
-			{
-        "text": "Twitter",
-        "link": "https://www.twitter.com/gabedotcss",
-        "position": "right",
-        "external": true
-      },
       {
         "text": "Contact",
         "link": "mailto:gsousa09@gmail.com",
