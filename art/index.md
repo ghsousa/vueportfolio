@@ -1,6 +1,6 @@
 ---
 works_index: true
-title: Graphic Portfolio
+title: LIKE THE LOUVRE, ONLY BETTER
 
 ---
 <ClientOnly>
