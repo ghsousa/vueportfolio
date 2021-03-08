@@ -150,7 +150,7 @@
 		font-weight: 800;
 		font-family: Chap;
 		text-transform: uppercase;
-		color: #3f4a71;
+		color: #000;
   }
 
   .navigation li:last-of-type {
@@ -167,7 +167,7 @@
 
   a {
     text-decoration: none;
-    color: #3f4a71;
+    color: #000;
   }
 
   a:active { color: inherit; }
