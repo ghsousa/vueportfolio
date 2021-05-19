@@ -6,8 +6,8 @@
     "favicon": "favicon-32x32.png",
     "navigation": [
       {
-        "text": "Art",
-        "link": "/art/",
+        "text": "Photography",
+        "link": "/photography/",
         "position": "left",
         "external": false
       },

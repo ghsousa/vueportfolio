@@ -22,9 +22,7 @@
 		},
   		computed: {
   			posts() {
-  				return this.$site.pages
-  					.filter(x => x.path.startsWith('/art/') && !x.frontmatter.works_index)
-  					.sort((a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date))
+  				return this.path('/.vuepress/public/upload/photos/')
   			}
   		}
   	}

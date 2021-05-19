@@ -6,7 +6,7 @@
 			<div class="home-page" v-if="$route.path === '/'">
 				<Content />
 			</div>
-			<div v-else-if="$route.path == '/art/'">
+			<div v-else-if="$route.path == '/photography/'">
 				<Content />
 			</div>
 			<div v-else-if="$route.path == '/about/'">
@@ -414,7 +414,7 @@
 }
 
 .home-page {
-	background: url("/upload/gabe-1.jpeg");
+	background: url("/upload/gabe-1.jpg");
 	background-size: cover;
 	height: 100vh;
 }

@@ -167,7 +167,7 @@
 
   a {
     text-decoration: none;
-    color: #000;
+    color: rgb(0, 0, 0);
   }
 
   a:active { color: inherit; }
