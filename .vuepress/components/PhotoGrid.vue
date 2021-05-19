@@ -33,6 +33,13 @@
 		align-items: center;
 	}
 
+	@media screen and (max-width: 728px) { 
+		.grid-image { 
+			background-position: center;
+			background-size:contain;
+		 }
+
+	}
 
 
 </style>
