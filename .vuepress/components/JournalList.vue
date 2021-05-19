@@ -138,7 +138,10 @@
 		font-family: avenir;
 		font-size: .9rem;
 		padding-top: .5rem;
-		color: #3f4a71 !important;
+	}
+
+	p.reading-time {
+		color: #3f4a71;
 	}
 
 	@media screen and (max-width: 1000px) {

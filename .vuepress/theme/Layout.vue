@@ -424,25 +424,48 @@
 	}
 }
 
-/* 
+
+
+
 @media (prefers-color-scheme: dark) { 
+	
+.home-page {
+	background: url("/upload/gabe-dark.jpg");
+	background-size: cover;
+	height: 100vh;
+}
 body, button, div#menu, .mobile-nav {
-	background: #111 !important;
+	background: #161031 !important;
+}
+
+.post {
+	background: #291d5c !important;
 }
 
 button, code, a#about-mail  {
 	color: #eee;
 }
 
+.reading-time {
+	color: #fff;
+}
+
 pre {
 		background: #4a57a146;
 }
 
-h1, h2, p, li {
+h1, h2, p, li, a {
 	color: #eee !important;
 }
 
+@media only screen and (max-width: 600px) { 
+	.home-page {
+		background-position: center;
+	}
+}
 
-} */
+
+
+}
 
 </style>
